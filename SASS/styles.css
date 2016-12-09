@@ -1,0 +1,282 @@
+@font-face {
+  src: url("./../assets/ROCK.TTF");
+  font-family: "rockwell"; }
+@font-face {
+  src: url("./../assets/Ubuntu-Medium.ttf");
+  font-family: "ubuntu"; }
+@font-face {
+  src: url("./../assets/msyi.ttf");
+  font-family: "yi"; }
+body {
+  margin: 0; }
+
+.container {
+  max-width: 1200px;
+  margin: auto; }
+
+@media screen and (max-width: 1200px) {
+  .main-nav ul {
+    margin-right: 2em; }
+
+  .contact-content {
+    text-indent: 2em; }
+
+  .mission-description {
+    padding: 0 1em !important; }
+
+  .mission-img {
+    width: 40% !important; } }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #map {
+    margin-right: 2em !important; } }
+@media screen and (max-width: 1000px) {
+  .contact-content #map {
+    width: 100% !important; }
+  .contact-content .contact-info {
+    display: inline-block !important;
+    width: 33.33% !important;
+    float: left !important;
+    margin-bottom: 2em; } }
+@media screen and (max-width: 800px) {
+  .qanda {
+    width: 100% !important; } }
+@media screen and (max-width: 670px) {
+  .contact-content .contact-info {
+    width: 100% !important;
+    float: none !important; }
+  .contact-content #map {
+    height: 18em !important; } }
+@media screen and (min-width: 1000px) {
+  .expertise div {
+    width: 100%;
+    display: block; }
+    .expertise div div {
+      display: inline-block;
+      width: 40% !important;
+      padding: 0 5%; } }
+@media screen and (min-width: 600px) {
+  .services div {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+    border-bottom: 1px solid black !important; }
+    .services div div {
+      display: inline-block;
+      width: 40% !important;
+      padding: 0 5%;
+      border-bottom: none !important; } }
+@media (min-width: 600px) and (max-width: 1000px) {
+  .expertise {
+    padding: 0 4em; } }
+.home-header {
+  display: flex;
+  height: 15em;
+  background-image: url(./../assets/header.jpg);
+  background-size: cover;
+  align-items: center;
+  position: relative;
+  overflow: hidden; }
+  .home-header .slant-div {
+    background-color: white;
+    opacity: 0.8;
+    box-shadow: 0 0 0.1em 0.1em black;
+    transform: translate(-50%, -50%) rotate(45deg);
+    position: absolute;
+    width: 113em;
+    height: 100em; }
+  .home-header img {
+    height: 85%;
+    width: 22em;
+    padding: 0 2em;
+    border-radius: 1em;
+    z-index: 1; }
+
+.about-content h1 {
+  margin-left: 1.5%;
+  font-family: "rockwell"; }
+.about-content .team {
+  width: 30.33%;
+  float: right;
+  display: inline-block;
+  padding: 0 1.5% 0 1.5%; }
+  .about-content .team img {
+    width: 100%;
+    border-radius: 0.2em; }
+  .about-content .team h5 {
+    font-family: "ubuntu"; }
+  .about-content .team h6 {
+    font-family: "ubuntu"; }
+  .about-content .team p {
+    font-size: 1.3em;
+    font-family: "yi"; }
+.about-content .mission-description {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top; }
+  .about-content .mission-description p {
+    -webkit-margin-before: 0;
+    padding-right: 1.5em;
+    font-family: "yi";
+    font-size: 1.3em; }
+.about-content .mission-img {
+  width: 50%;
+  border-radius: 0.2em;
+  display: inline-block; }
+
+.main-nav {
+  height: 2em; }
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    -webkit-margin-after: 0; }
+    .main-nav ul li {
+      list-style-type: none;
+      margin-left: 2.5em; }
+      .main-nav ul li a {
+        color: black;
+        text-decoration: none;
+        font-family: "rockwell"; }
+
+hr {
+  -webkit-margin-before: 1em; }
+
+.home-content {
+  padding: 1em; }
+  .home-content h1 {
+    font-family: "rockwell";
+    -webkit-margin-before: 0;
+    font-size: 2.2em; }
+  .home-content p {
+    font-family: "yi";
+    margin-bottom: 1.5em;
+    text-indent: 4em;
+    font-size: 1.4em; }
+  .home-content img {
+    border-radius: 0.2em;
+    width: 80%;
+    padding: 0 10% 0 10%;
+    box-shadow: 0 0 1em; }
+  .home-content .expertise {
+    text-align: center; }
+    .home-content .expertise h2 {
+      font-family: "rockwell";
+      font-size: 1.8em; }
+    .home-content .expertise div div {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      width: 100%;
+      text-align: center; }
+      .home-content .expertise div div img {
+        height: 10em;
+        box-shadow: none; }
+      .home-content .expertise div div h4 {
+        font-family: "rockwell";
+        font-size: 1.4em; }
+      .home-content .expertise div div p {
+        width: 100%;
+        text-indent: 4em;
+        text-align: left;
+        font-family: "yi";
+        margin-bottom: 0; }
+  .home-content .services h2 {
+    font-family: "rockwell";
+    text-align: center;
+    font-size: 1.8em; }
+  .home-content .services div {
+    border-bottom: none; }
+    .home-content .services div div {
+      vertical-align: top;
+      display: inline-block;
+      width: 100%;
+      font-family: "rockwell";
+      text-align: center;
+      border-bottom: 1px solid black;
+      padding-bottom: 1em; }
+      .home-content .services div div h3 {
+        text-align: center; }
+      .home-content .services div div p {
+        text-indent: 4em;
+        text-align: left;
+        font-family: "yi";
+        margin-bottom: 1em; }
+  .home-content .closing h2 {
+    font-family: "rockwell";
+    text-align: center;
+    font-size: 1.8em; }
+  .home-content .closing h4 {
+    font-family: "yi";
+    text-indent: 4em;
+    font-size: 1.2em; }
+
+.contact-content h1 {
+  font-family: "rockwell"; }
+.contact-content .contact-info {
+  display: block;
+  width: 100%;
+  float: none; }
+  .contact-content .contact-info h3 {
+    font-family: "rockwell"; }
+  .contact-content .contact-info p {
+    font-family: "yi";
+    font-size: 1.2em; }
+.contact-content span {
+  font-family: "ubuntu";
+  font-size: 0.8em;
+  display: block;
+  padding-bottom: 1em;
+  padding-top: 1em; }
+.contact-content #map {
+  width: 40em;
+  height: 25em;
+  float: right;
+  background-color: grey; }
+
+.faqs-content {
+  padding: 1em; }
+  .faqs-content h1 {
+    font-family: "rockwell";
+    margin-bottom: 2em; }
+  .faqs-content .qanda {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 4em; }
+    .faqs-content .qanda p {
+      text-align: left;
+      font-family: "yi";
+      padding-right: 1em;
+      font-size: 1.5em;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0; }
+      .faqs-content .qanda p .question {
+        font-size: 2em;
+        color: #318dca; }
+      .faqs-content .qanda p .answer {
+        font-size: 2em;
+        margin-left: 2em;
+        color: #f2b90d; }
+  .faqs-content p {
+    font-family: "ubuntu";
+    text-align: center; }
+
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  -webkit-margin-after: 0;
+  justify-content: center;
+  -webkit-padding-start: 0; }
+  footer nav ul li {
+    font-family: "rockwell";
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 1.25em 0 1.25em; }
+footer h5 {
+  font-family: "ubuntu";
+  text-align: center; }
+footer p {
+  text-align: center;
+  font-family: "rockwell";
+  font-size: 0.7em; }
+
+/*# sourceMappingURL=styles.css.map */
